@@ -1,3 +1,4 @@
+import { JobType } from "../Utils/types";
 import JobRow from "./JobRow";
 
 export const revalidate = 0;

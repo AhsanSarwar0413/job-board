@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Timeline from "./Timeline";
 import Link from "next/link";
 import axios from "axios";
+import { JobType } from "../Utils/types";
 
 
 export default function JobRow({

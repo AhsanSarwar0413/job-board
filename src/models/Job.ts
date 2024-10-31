@@ -1,3 +1,4 @@
+import { JobType } from "@/app/Utils/types";
 import { AutoPaginatable, OrganizationMembership, WorkOS, User } from "@workos-inc/node";
 import mongoose, { model, models, Schema } from "mongoose";
 

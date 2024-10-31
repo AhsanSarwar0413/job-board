@@ -13,6 +13,7 @@ import { faEnvelope, faPhone, faStar, faUser } from "@fortawesome/free-solid-svg
 import ImageUpload from "./ImageUpload";
 import { redirect } from "next/navigation";
 import saveJob from "../server/actions/saveJob";
+import { City, Country, JobType, State } from "../Utils/types";
 
 interface Location {
     country: string;
@@ -100,7 +101,7 @@ export default function JobForm({
                                     id: countryId,
                                     name: location.country
                                 } : 0}
-                                onChange={(e: any) => {
+                                onChange={(e: Country) => {
                                     setCountryId(e.id);
                                     setLocation({
                                         ...location,
@@ -115,7 +116,7 @@ export default function JobForm({
                                     name: location.state
                                 } : 0}
                                 countryid={countryId}
-                                onChange={(e: any) => {
+                                onChange={(e: State) => {
                                     setstateId(e.id);
                                     setLocation({
                                         ...location,
@@ -131,7 +132,7 @@ export default function JobForm({
                                     id: cityId,
                                     name: location.city
                                 } : 0}
-                                onChange={(e: any) => {
+                                onChange={(e: City) => {
                                     setCityId(e.id);
                                     setLocation({
                                         ...location,

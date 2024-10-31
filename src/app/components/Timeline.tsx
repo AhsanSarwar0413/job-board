@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import TimeAgo from "react-timeago";
 
 export default function Timeline({
